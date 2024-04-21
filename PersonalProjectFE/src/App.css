@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.prime{
+  /* float:right; */
+  border: solid;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding:10px;
+  width:auto;
+  background-color: #012613;
+  color:white;
+  /* position:fixed; */
+  top:50px;
+  border-radius: 10px;
+  
+ 
+
+}
+.palin{
+  /* float:right; */
+       border: solid;
+       margin-left:10px;
+       margin-right:10px;
+       margin-bottom: 5px;
+    padding:10px;
+    width:auto;
+    background-color: #012613;
+    color:white;
+    /* position:fixed; */
+  top:250px;
+  border-radius: 10px;   
+  }
+
+  .roman{
+    border: solid;
+    margin-left:10px;
+    margin-right:10px;
+    /* margin-bottom: 5px; */
+    padding:10px;
+    width:auto;
+    background-color: #012613;
+    color:white;
+  top:450px;
+  border-radius: 10px;  
+  }
+
+
+  .calendar{
+    width:15%;
+      /* border:  solid black; */
+      borderRadius:"10px";
+      /* outline: #4CAF50 solid 5px; */
+      /* margin: auto; */
+      margin: 30px;
+      /* margin-top: 0px; */
+      /* padding: 150px; */
+      text-align: center;
+      font-weight: 600; 
+      background-color: white;
+      
+    
+  }
+
+  .col{
+    margin :5px;
+    padding:5px;
+    max-width:75px;
+  }
+
+  .row{
+    width:275px;
+  }
+  
+
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+  aside {
+    border-radius: 20px;
+    width: 15%;
+    /* padding-left: 15px; */
+    margin-left: 15px;
+    margin-right: 15px;
+    float: right;
+    /* font-style: italic; */
+    background-color: #9eb9cf;
+  }
+
+  /* .calBackground {
+    border: 1px solid black;
+    height: 420px;
+    width: 100%;
+    background: url(calendarTemp.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+  } */
+
