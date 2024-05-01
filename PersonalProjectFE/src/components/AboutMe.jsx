@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Rows from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import myPhoto from '../../src/20220708_175821.jpg';
-import profession from '../../src/profession.jpg'
-import computer from '../../src/computer.jpg';
-import training from '../../src/training.jpg';
+import myPhoto from '../pictures/20220708_175821.jpg';
+import profession from '../pictures/profession.jpg'
+import computer from '../pictures/computer.jpg';
+import training from '../pictures/training.jpg';
 
 
 import Card from 'react-bootstrap/Card';
@@ -98,7 +98,7 @@ function AboutMe() {
             <li>Extensive knowledge of Anti Money Laundering policies and procedures</li>
             <li>Experience in working closely with Economic Crime Prevention team to ensure the Group adhere to the FCA regulations</li>
             <li>Coaching peers as individuals and as team on various aspects of AML policies</li>
-            <li>Champion in customer Risk assessment</li>
+            <li>Champion in customer Risk assessment<b>(CRA)</b> and <b>APM</b></li>
             <li>Experience in using various customer management tools such as COTJ Pega, Pega 7, Pega CLM, COM, MWS etc</li>
             <li>Compliance Due diligence</li>
             <li>General business account managements</li>

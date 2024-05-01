@@ -38,8 +38,10 @@ function Jobs() {
             employer={data.employer}
            jobDesc={data.jobDescription}
            resp= {data.responsibility}
+           
             />
         );
+        <JobStructure getDatas={getDatas}/>
 
     }
 
@@ -105,8 +107,8 @@ function Jobs() {
                         <Form.Control type="text" placeholder="Enter responsiblities in the role" value={responsibility}onChange={e => setResponsibility(e.target.value)} />
                     </Form.Group>
 
-                    <Button style={{ float: "right", margin: "30px", width: "100px", color: "#fdc1da", backgroundColor: "#11663f" }} variant="success" type="submit" >
-                        <strong>Submit</strong>
+                    <Button style={{ float: "right", margin: "30px", width: "100px", color: "white", backgroundColor: "#11663f" }} variant="success" type="submit" >
+                        Submit
 
                     </Button>
 

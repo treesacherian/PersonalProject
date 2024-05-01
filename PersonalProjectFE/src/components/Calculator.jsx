@@ -5,8 +5,7 @@ function Calculator() {
     const [number, setNumber] = useState();
     const [inputString, setInputString] = useState("");
     const [input, setInput] = useState(0);
-    // console.log("input:", input);
-    var last = '7';
+        // var last = '7';
 
 
 
@@ -39,7 +38,7 @@ function Calculator() {
     return (<>
 
 
-        {/* <div className="container text-center" style={{backgroundColor:"white",width:"20%", margin:"10px",marginTop:"20px"}}> */}
+        
         <div className="container text-center" style={{ borderRadius:"10px", backgroundColor: "#012613", width: "auto", margin: "10px",marginTop:"5px",border:"solid", borderColor:"white", borderStyle:"groove", }}>
             <div className="row" style={{ marginTop: "20px" ,marginLeft:"20px" }}>
                 <input style={{ width: "170px", }}
@@ -70,7 +69,7 @@ function Calculator() {
                 </button>
 
                 <div className="row">
-                    {/* <button className="col" onClick={() => setInputString(inputString + 7)}> */}
+                   
                     <button type="button" className="btn btn-primary" style={{ width: "auto", margin: "5px" }} onClick={() => setInputString(inputString + 7)}>
                         7
                     </button>

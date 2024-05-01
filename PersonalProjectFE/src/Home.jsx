@@ -3,7 +3,8 @@ import { Form } from "react-router-dom";
 import React from 'react';
 import ReactDom from 'react-dom';
 import Calculator from './components/Calculator'
-import xmas from '../src/xmas2.jpg'
+import xmas from './pictures/xmas2.jpg'
+import Popup from 'reactjs-popup';
 
 
 
@@ -74,7 +75,8 @@ function Home() {
     function checkPrime() {
 
         console.log("num: ", num);
-        if (num == 2 || num == 1) setResult(num + " is  a PRIME NUMBER");
+        if (num == 1 ) setResult(num + " is not a PRIME NUMBER");
+        if (num == 2 ) setResult(num + " is  a PRIME NUMBER");
         else {
             for (let i = 2; i < num; i++) {
                 if (num % i == 0) {
@@ -137,7 +139,16 @@ function Home() {
             <aside>
                 <div className="prime">
 
-                    <p> PRIME Number check</p>
+                    <p>  
+                    <Popup trigger=
+                        {<button  style={{  border: "none", color: "white", background: "none" }}><u>PRIME</u> </button>}
+
+                        position="left center">
+                            <p  style={{color:"white", marginRight:"25px"}}>PRIME number a whole number greater than 1 that 
+                            cannot be exactly divided by any whole number other than itself and 1</p>
+                    </Popup>
+                    Number check</p>
+                    
                     <form onSubmit={e => {
 
                         e.preventDefault();
@@ -164,7 +175,17 @@ function Home() {
 
 
                 <div className="palin">
-                    <p>Check for Palindrome</p>
+                    {/* <p>Check for Palindrome</p> */}
+
+                    <p>   Check for
+                    <Popup trigger=
+                        {<button  style={{  border: "none", color: "white", background: "none" }}><u>PALINDROME</u> </button>}
+
+                        position="left center">
+                            <p  style={{color:"white", marginRight:"100px"}}>PALINDROME is a word that reads the same backwards as forwards</p>
+                    </Popup>
+                    </p>
+
                     <form onSubmit={e => {
 
                         e.preventDefault();
@@ -214,24 +235,7 @@ function Home() {
 
 
 
-            {/* Home Page
-            <p style={{ padding: "20px" }}>Today's date is {date}</p>
-            <p>Today's time is {time}</p> */}
-            {/* <img src={calendarPic} alt="picture of a calendar" style={{ width:"10%"}}></img> */}
-           
-            {/* <div className="calBackground">
-            <table  >
-                <div         >
-                    <div  ><tr  > {monthName}&nbsp;{year}</tr></div>
-
-                    <tr  >{day}</tr>
-                    <tr></tr>
-                    <tr  >{weekDay}</tr>
-                    <div ><tr style={{ fontSize: "40px", textAlign: "end" }}  >{time}</tr></div>
-
-                </div>
-            </table>
-            </div> */}
+            
 
 
             <table className="calendar" style={{borderRadius:"10px"}}   >
@@ -239,13 +243,13 @@ function Home() {
                    <div style={{ backgroundColor: "red",borderTopRightRadius:"10px", borderTopLeftRadius:"10px"}}>
                     <div style={{  fontSize: "30px", padding: "5px", marginLeft: "70px" }} ><tr  > {monthName}&nbsp;{year}</tr></div>
                     </div>
-                   <div style={{marginLeft:"100px"}}>
+                   <div style={{marginLeft:"125px"}}>
                    <tr style={{ fontSize: "80px", padding: "5px", textAlign: "center", }} >{day}</tr>
                    </div>
                     
                     <tr></tr>
-                    <div style={{marginLeft:"80px"}}>
-                    <tr style={{ fontSize: "40px" }}  >{weekDay}</tr>
+                    <div style={{marginLeft:"40px"}}>
+                    <tr style={{ fontSize: "40px", textAlign: "center" }}  >{weekDay}</tr>
                     </div>
                    
                     <div style={{ borderTop: "solid" ,textAlign:"center",paddingLeft:"70px"}} ><tr style={{ fontSize: "40px",}}  >{time}</tr></div>
@@ -254,7 +258,7 @@ function Home() {
             </table>
 
             <p style={{color:"white", fontFamily:"cursive", fontSize:"80px"}}> <b>{count} days till Christmas</b></p>
-            <img src={xmas} style={{float:"right"}}></img>
+            <img src={xmas} alt="santa and reindeer" style={{float:"right"}}></img>
 
 
             {/* <div style={{ backgroundColor: "white", width: "30%" }}><p> {count} days till Christmas</p></div>
